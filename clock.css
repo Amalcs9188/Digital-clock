@@ -1,0 +1,19 @@
+.clock {
+    border: 2px solid rgb(113, 112, 112);
+    box-shadow: 2px 2px 8px;
+}
+
+.clock h1 {
+    position: relative;
+    z-index: 1;
+    background-image: linear-gradient(to right, #ff0000, #00ff00, #0000ff);
+    font-family: sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    border: 1px solid gray;
+    box-shadow: 2px 2px 8px gray , -2px -2px 8px gray; 
+    padding: 0 10px;
+}

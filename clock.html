@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="clock.css">
+</head>
+<body style="background-color: rgb(33, 33, 33);">
+
+    <div style="height: 100vh; display: flex; justify-content: center; align-items: center" class="clock">
+
+        <div class="sec"><h1 id="output" style="color: rgb(169, 168, 166);font-size: 8em;">HH:MM:SS AM</h1></div>
+
+
+
+    </div>
+    <script>
+        const getDateTime=()=>{
+            let localTime = new Date()
+            let hour =localTime.getHours()
+            let minutes =localTime.getMinutes()
+            let sec = localTime.getSeconds()
+            output.innerHTML=`${hour}:${minutes}:${sec} ${hour>12?"PM":"AM"}`
+
+            setTimeout(() => {
+                getDateTime()
+                
+            }, 1000);
+            
+        }
+
+        getDateTime()
+        
+
+    </script>
+
+    
+    
+</body>
+</html>
